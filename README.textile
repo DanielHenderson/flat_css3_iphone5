@@ -1,7 +1,7 @@
-h1. CSS3 Flat iPhone5 + Auto Scroll
+h1. Flat CSS3 iPhone5 + Auto Scroll
 
-An flat iPhone5 element made with CSS3 that holds a scrollable image.
-Used to display or present content of mobile pages.
+A flat iPhone5 element made with CSS3 that holds a scrollable image.
+Used to display or present content of mobile pages on websites.
 
 *Author:* "Daniel J. Henderson":http://twitter.com/HendersonDesign
 *Demo* : http://danieljhenderson.com/plugins/iphone5/demo.html
