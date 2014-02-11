@@ -1,0 +1,230 @@
+@charset "UTF-8";
+/*
+*
+* Flat iPhone5 CSS, used in conjunction with iphonescroll.js.
+* by Daniel J. Henderson - hendeweb@gmail.com @HendersonDesign
+* Created January 2014
+*
+*/
+/*reset box-sizing*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*SVG base64 Play button*/
+.play-btn{
+	width:45px;
+	height:47px;
+background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0NXB4IiBoZWlnaHQ9IjQ3cHgiIHZpZXdCb3g9IjAgMCA0NSA0NyI+PHN0eWxlPi5zdHlsZTB7ZmlsbDoJI0ZGRkZGRjt9PC9zdHlsZT48cGF0aCBkPSJNMi42NjcgMS43MDdDMS4yIDEgMCAxLjcgMCAzLjMzNHY0MC4zMzJjMCAxLjYgMS4yIDIuNCAyLjcgMS42MjdsMzkuNjY2LTIwLjQyIGMxLjQ2Ny0wLjc1NSAxLjQ2Ny0xLjk5MSAwLTIuNzQ2TDIuNjY3IDEuNzA3eiIgY2xhc3M9InN0eWxlMCIvPjwvc3ZnPg==) no-repeat center;	
+}
+/*Default iPhone5 CSS*/
+.iphone5{
+	max-width:270px;
+	position:relative;
+	margin:auto;
+	border:3px solid #E7E5DD;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+	background-color:#E7E5DD;
+	-webkit-box-shadow: -14px 14px 20px 0px rgba(50, 50, 50, 0.21);
+-moz-box-shadow: -14px 14px 20px 0px rgba(50, 50, 50, 0.21);
+box-shadow: -14px 14px 20px 0px rgba(50, 50, 50, 0.21);
+}
+.iphone5 .side-btn {
+  background-color: #EAE9E2;
+  height: 20px;
+  left: -6px;
+  position: absolute;
+  width: 3px;
+  z-index: 5;
+-webkit-border-top-left-radius: 2px;
+-webkit-border-bottom-left-radius: 2px;
+-moz-border-radius-topleft: 2px;
+-moz-border-radius-bottomleft: 2px;
+border-top-left-radius: 2px;
+border-bottom-left-radius: 2px;
+}
+.iphone5 .front{
+	width:100%;
+	position:relative;
+	padding:15px;
+	background-color:#E7E5DD;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+	border:3px solid #efefef;
+}
+.iphone5 .front div{
+	width:100%;
+	position:relative;
+	text-align:center;
+	display:block;
+	margin:auto;
+}
+.iphone5 .front div i{
+	position:relative;
+	text-align:center;
+	display:block;
+}
+.iphone5 .front .camera{
+	max-width:10px;
+	height:10px;
+	position:relative;
+	margin:auto;
+	-webkit-border-radius: 20px;
+	border-radius: 20px; 
+	background-color:transparent;
+	border:2px solid #CFCEC6;
+	margin-bottom:8px;
+}
+.iphone5 .front .speaker{
+	max-width:45px;
+	height:12px;
+	position:relative;
+	margin:auto;
+	-webkit-border-radius: 20px;
+	border-radius: 20px; 
+	background-color:#90908A;
+	border:3px solid #CFCEC6;
+	margin-bottom:20px;
+}
+.iphone5 .front .screen{
+	background-color:#ffffff;
+	height:400px;
+	width:100%;
+	/*cursor: url(../img/cursor-scroll.png), auto;*/
+	cursor:pointer;
+	z-index:7;
+	position:relative;
+}
+/*Opacity Glare - Using only CSS*/
+/*
+.iphone5 .glare {
+  border-color: #FFFFFF #FFFFFF transparent transparent;
+  border-radius: 0px 30px 30px 0px;
+  border-style: solid;
+  border-width: 275px 90px;
+  height: 0;
+  opacity: 0.16;
+  position: absolute;
+  right: 0;
+  width: 0;
+  z-index: 8;
+}
+*/
+/*Opacity Glare - Using IMG instead of CSS*/
+.iphone5 .glare {
+  background-image: url("../img/glare.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 0 30px 30px 0;
+  height: 550px;
+  opacity: 1;
+  position: absolute;
+  right: 0;
+  width: 180px;
+  z-index: 8;
+}
+.iphone5 .front .screen .info-bar{
+	width:100%;
+	position:absolute;
+	z-index:8;
+	height:28px;
+}
+.iphone5 .front .screen .info-bar img{
+	opacity:0.8;
+}
+.iphone5 .front .screen .info-bar img{
+	width:100%;
+}
+.iphone5 .front .screen .screen-click-btn{
+	position:absolute;
+	height:400px;
+	width:100%;
+	z-index:10;
+	text-align:center;
+}
+.iphone5 .front .screen .screen-click-btn .play-overlay{
+	position:absolute;
+	height:400px;
+	width:100%;
+	z-index:9;
+	text-align:center;
+	background-image:url(../img/opacity30.png);
+}
+.iphone5 .front .screen .screen-click-btn span{
+	color:#ffffff;
+	top:42%;
+	left:42%;
+	position:absolute;
+	z-index:10;
+}
+.iphone5 .front .screen .thescreen{
+	height:400px;
+	overflow:scroll;
+}
+.iphone5 .front .screen .thescreen img{
+	position:relative;
+	width:100%;
+	z-index:7;
+	padding-top:28px;
+}
+.iphone5 .front .bottom {
+  background-color: #CFCEC6;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  display: block;
+  margin:auto;
+  margin-top:10px;
+  padding: 15px;
+  position: relative;
+  width: 50px;
+}
+.iphone5 .front .bottom span {
+  background-color: #CFCEC6;
+  border: 2px solid #EFEFEF;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  display: block;
+  margin: auto;
+  padding: 7px;
+  position: relative;
+  text-align: center;
+  width: 10px;
+}
+/*Optional - Black iPhone5 CSS. To enable add .black class onto .iphone5 class within the HTML.*/
+.iphone5.black{
+	background-color:#1C1D1D !important;
+	border:3px solid #202121;
+}
+.iphone5.black .side-btn {
+  background-color: #131313;
+}
+.iphone5.black .front{
+	background-color:#1C1D1D;
+	border:3px solid #212222;
+}
+.iphone5.black .front .camera{
+	background-color:#303131;
+	border:2px solid #191A1A;
+}
+.iphone5.black .front .speaker{
+	background-color:#111212;
+	border:3px solid #191A1A;
+}
+.iphone5.black .front .bottom {
+  background-color: #191A1A;
+}
+.iphone5.black .front .bottom span {
+  background-color: transparent;
+  border: 2px solid #262727;
+}
+/*Optional No Auto Scrolling - Add .noclick class next to .iphone5 class to disable clicking functionality.*/
+.iphone5.noclick .screen-click-btn{
+display:none;
+}
+.iphone5.noclick .front .screen{
+	cursor:default !important;
+}

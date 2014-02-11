@@ -1,0 +1,69 @@
+h1. CSS3 Flat iPhone5 + Auto Scroll
+
+An flat iPhone5 element made with CSS3 that holds a scrollable image.
+Used to display or present content of mobile pages.
+
+*Author:* "Daniel J. Henderson":http://twitter.com/HendersonDesign
+*Demo* : http://danieljhenderson.com/plugins/iphone5/demo.html
+*Requires:* Latest jQuery if iphone5scroll.js is enabled
+
+h2. Usage
+
+Download and unzip files. Include the latest JQuery along with iphone5scroll.js and iphone5.css in the head of your HTML.
+
+bc.. <link type="text/css" rel="stylesheet" media="screen" href="css/iphone5.css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/iphone5scroll.js"></script>
+
+p. Copy the HTML element .iphone5 markup included in the demo.html file and paste into desired place.
+
+bc.. <div class="iphone5" title="Play">
+        <div class="glare"></div>
+        <div class="side-btn" style="top: 70px; height:25px;"></div>
+        <div class="side-btn" style="top: 120px;"></div>
+        <div class="side-btn" style="top: 165px;"></div>
+        <div class="front">
+            <div>
+                <div class="camera"></div>
+            </div>
+            <div>
+                <div class="speaker"></div>
+            </div>
+            <div class="screen">
+                <div class="screen-click-btn">
+                    <div class="play-overlay"></div>
+                    <span class="play-btn"></span>
+                </div>
+                <div class="info-bar">
+                    <img alt="" src="img/sample_top-bar.png"/>
+                </div>
+                <div class="thescreen">
+                    <img alt="" src="img/sample_scroll.jpg"/>
+                 </div>
+            </div>
+            <div>
+                <div class="bottom"><span></span></div>
+            </div>
+        </div>
+      </div>
+
+p. Make sure the img, css, and js folder are linked up properly. 
+Included in the img/ directory are some sample images to get you started.
+You can replace them with your own screen captures of your mobile site.
+
+h2. Options
+
+h3. Disable Auto Scroll
+
+p. iphone5scroll.js automatically scrolls the image by it height onclick.
+To scroll manually you don't need to include jQuery or iphone5scroll.js.
+You only need to add the .noclick class to the .iphone5 element.
+
+bc.. <div class="iphone5 noclick" title="Play">
+
+h3. iPhone5 Color
+
+p. To switch the iPhone5 color to Black simply add the .black class to the .iphone5 element.
+
+bc.. <div class="iphone5 black" title="Play">
+
